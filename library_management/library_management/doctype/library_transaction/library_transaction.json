@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MES-{#####}",
+ "creation": "2024-07-20 16:17:01.661404",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nfdi",
+  "add_article",
+  "library_member",
+  "type",
+  "date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nfdi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "library_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Library Member",
+   "options": "Library Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Issue\nReturn"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Transaction",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "add_article",
+   "fieldtype": "Table",
+   "label": "Add Article",
+   "options": "Add Article"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-23 15:26:13.296160",
+ "modified_by": "Administrator",
+ "module": "Library_Management",
+ "name": "Library Transaction",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "LIbrarian",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
